@@ -1,1 +1,2 @@
 # sys_prog
+Repo for me to keep track of progress and some notes on the books. Currently going through two of them: the Linux Memory Manager and Systems Programming in Linux. One is very through the other more generic.
