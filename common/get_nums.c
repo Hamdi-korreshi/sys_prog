@@ -3,7 +3,7 @@
 #include <limits.h>
 #include <stdlib.h>
 
-int get_int(const char *s, int flags, int *out, const char **endp)
+int get_int(const char *s, int flags, int *out, const char *endp)
 {
     char *end = NULL;
     long v;
