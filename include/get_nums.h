@@ -29,4 +29,10 @@
 
 int get_long(char *arg, int flags, long *value, char *msg);
 
+int  get_int(char *arg, int flags, int *value, char *msg );
+
+int  get_dbl(char *arg, int flags, double *value, char *msg );
+
+void lltostr(long long int num, char* str, int width);
+
 #endif
