@@ -4,6 +4,7 @@
 #include "sys_hdrs.h"
 #include "get_nums.h"
 #include "error_exits.h"
+#include "locale.h"
 #define STRING_MAX 1024
 #define MAXLEN STRING_MAX
 
