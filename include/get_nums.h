@@ -29,7 +29,7 @@
 
 int get_long(char *arg, int flags, long *value, char *msg);
 
-int get_int(const char *s, int flags, int *out, const char *endp);
+int get_int(const char *s, int flags, int *out, const char **endp);
 
 int  get_dbl(char *arg, int flags, double *value, char *msg );
 
