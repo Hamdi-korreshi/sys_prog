@@ -19,6 +19,11 @@ int main(int argc, char* argv[]) {
     if ( (loc = newlocale(LC_NUMERIC_MASK, argv[1], BASE0)) == BASE0)
         fatal_error(EXIT_FAILURE, "newlocale");
     
+    /* Use the LC_TIME values of the second command-line argument to modify
+       the locale object just created. The effect is that it has the numeric
+       settings of the first locale and the time settings of the second.
+       We assign the returned locale to a new locale object so
+       that we don't overwrite loc, in case something goes wrong.           */
     if (argc > 2) {
         if ( (newloc = newlocale(LC_TIME_MASK, argv[2], loc)) == BASE0)
             fatal_error(EXIT_FAILURE, "newlocale");
