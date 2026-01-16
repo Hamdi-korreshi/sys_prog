@@ -13,6 +13,7 @@ void error_check(char *endptr, char *check) {
     if ( *endptr != "\0" )
         printf("characters following the number: \"%s\"\n", endptr);
 }
+
 int main( int argc, char *argv[]) {
     if ( argc < 3 || argc > 4) {
         printf("usage ./seq num1 num2\n");
